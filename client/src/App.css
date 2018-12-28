@@ -50,6 +50,26 @@ body {
     /* The third layer shadow */ 0 20px 1px -9px rgba(0, 0, 0, 0.25);
   padding: 3rem;
 }
+.todo-list__btn-wrapper {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+.todo-list__btn {
+  background: #eee;
+  border: 1px solid #bebebea6;
+  outline: 0;
+  padding: 1rem 1rem;
+  width: 45%;
+
+  transition: all 0.3s;
+}
+.todo-list__btn:hover {
+  cursor: pointer;
+  background-color: rgba(150, 150, 150, 0.5);
+  border-color: rgba(30, 30, 30, 0.55);
+}
 .footer {
   display: flex;
   justify-content: center;
@@ -67,13 +87,20 @@ body {
   width: 70%;
   justify-content: flex-start;
   align-items: center;
-  padding: 3rem 2rem 0 0;
+  padding: 0 2rem 0 0;
   border-bottom: 1px solid #cecece;
   margin: 1rem;
   font-size: 1.5rem;
   color: #333333;
+  transition: background 0.3s;
+}
+.todo-item:hover {
+  background: #e6e6e6a6;
 }
 input[type="checkbox"] {
   margin-right: 1rem;
   outline: 0;
+}
+label {
+  flex: 1;
 }
