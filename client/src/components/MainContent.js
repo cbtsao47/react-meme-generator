@@ -8,10 +8,11 @@ class MainContent extends React.Component {
   }
   handleChange = id => {
     this.setState(prevState => {
-      const todos = prevState.data.map(todo => {
+      let todos = prevState.data.map(todo => {
         if (todo.id === id) {
-          todo.completed = !todo.completed;
-          return todo;
+          let copy = { ...todo };
+          copy.completed = !copy.completed;
+          return copy;
         } else {
           return todo;
         }
