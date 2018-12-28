@@ -17,6 +17,7 @@ class MainContent extends React.Component {
           return todo;
         }
       });
+
       return { data: todos };
     });
   };

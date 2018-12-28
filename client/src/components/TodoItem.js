@@ -10,7 +10,14 @@ function TodoItem(props) {
         checked={completed}
         onChange={() => props.handleChange(id)}
       />
-      <label htmlFor="id">{text}</label>
+      <label
+        htmlFor="id"
+        style={
+          completed ? { textDecoration: "line-through", color: "gray" } : null
+        }
+      >
+        {text}
+      </label>
     </div>
   );
 }
