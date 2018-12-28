@@ -6,12 +6,13 @@ function TodoItem(props) {
     <div className="todo-item">
       <input
         type="checkbox"
-        name=""
+        name="tasks"
+        id={id}
         checked={completed}
         onChange={() => props.handleChange(id)}
       />
       <label
-        htmlFor="id"
+        htmlFor={id}
         style={
           completed ? { textDecoration: "line-through", color: "gray" } : null
         }
