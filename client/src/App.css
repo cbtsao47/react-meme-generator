@@ -58,11 +58,15 @@ body {
 .meme-generator__input {
   font-size: inherit;
   border: 1px solid black;
+  padding: 1rem;
+  margin-left: 1rem;
 }
 .meme-generator__btn {
   font-size: inherit;
   border: 1px solid black;
   background: #eee;
+  margin-left: 1rem;
+  padding: 1rem;
 }
 
 .meme {
