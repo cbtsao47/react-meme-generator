@@ -46,7 +46,6 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex: 1;
-  border: 1px solid red;
 }
 .meme-generator__form {
   font-size: 1.6rem;
