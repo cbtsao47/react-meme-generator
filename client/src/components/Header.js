@@ -7,7 +7,7 @@ function Header() {
         src="http://www.pngall.com/wp-content/uploads/2016/05/Trollface.png"
         alt="troll face"
       />
-      <h1>Meme Generator</h1>
+      <h1>Meme of the day</h1>
     </header>
   );
 }
