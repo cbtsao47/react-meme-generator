@@ -14,12 +14,14 @@ body {
   box-sizing: inherit;
 }
 .App {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
 }
-.header {
+/* header */
+.header,
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,6 +30,7 @@ body {
 
   padding: 1rem 0;
 }
+
 .header__logo {
   width: 10rem;
   height: 10rem;
@@ -35,4 +38,55 @@ body {
 .header__title {
   font-size: 5rem;
   margin-left: 5rem;
+}
+/* meme generator */
+.meme-generator {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  border: 1px solid red;
+}
+.meme-generator__form {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 2rem 0;
+}
+.meme-generator__input {
+  font-size: inherit;
+  border: 1px solid black;
+}
+.meme-generator__btn {
+  font-size: inherit;
+  border: 1px solid black;
+  background: #eee;
+}
+
+.meme {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  position: relative;
+  background-color: #efefef;
+  border: 1px solid rgba(50, 50, 50, 0.3);
+}
+.meme__img {
+  max-height: 60rem;
+}
+.meme h2 {
+  position: absolute;
+  top: 4rem;
+  font-size: 3rem;
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000;
+  letter-spacing: 1px;
+}
+.meme h2:nth-child(3) {
+  top: calc(90% - 3rem);
 }
